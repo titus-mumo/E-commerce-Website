@@ -1,0 +1,343 @@
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background: url('images/icons/pexels-fwstudio-129731.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.main{
+    background-color: orange;
+}
+.alert{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 300;
+    background-color: orange;
+    position: relative;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 13.5px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    animation:letters 3s linear 0s infinite normal;
+}
+@keyframes letters {
+    0% {transform: translateX(600px)}
+    20% {transform: translateX(-10px)}
+    40% {transform: translateX(10px)}
+    60% {transform: translateX(-10px)}
+    80% {transform: translateX(10px)}
+    100% {transform: translateX(-600px)}
+
+}
+.alert2{
+    color: white;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 550px;
+    font-size: large;
+    font-weight: bold;
+}
+.call{
+    background-color: rgb(240, 92, 38);
+    position: absolute;
+    right: 40px;
+    top: 0px;
+    height: 55px;
+    z-index: 1;
+    line-height: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.sub-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.sub-header .name {
+    font-size: 30px;
+    font-weight: bolder;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 5px;
+}
+.sub-header .search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.sub-header .search-bar input{
+    background-color: azure;
+    border: 0.5px solid black;
+    width: 400px;
+    height: 20px;
+    display: inline-block;
+    padding-left: 5px;
+    margin-left: 5px;
+    opacity: 0.8;
+    border-radius: 3px;
+}
+.search {
+    background-color: orange;
+    font-size: large;
+    margin-left: 10px;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.search:hover {
+    cursor: pointer;
+}
+.account {
+    flex: 1;
+    margin-left:70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.account img {
+    display: inline-block;
+    height: 11%;
+    width: 12%;
+}
+.account .sub-account {
+    display: inline-block;
+}
+.help {
+    flex: 1;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+}
+.help img {
+    display: inline-block;
+    height: 11%;
+    width: 12%;
+}
+.help p {
+    display: inline-block
+}
+.cart {
+    flex: end;
+    margin-right: 20px;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+.cart img {
+    display: inline-block;
+    height:min-content;
+    margin-right: 5px;
+}
+.cart p{
+    display: inline-block
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.sidebar {
+    display: inline-block;
+    width: 120px;
+    font-size: 12px;
+    position: absolute;
+    z-index: 5;
+    padding: 10px;
+}
+.supermarket, .health, .home, .phones, .computing, .electronics, .fashion, .gaming, .baby, .sporting, .others {
+    position:relative;
+    cursor: pointer;
+}
+.supermarket .category {
+    margin-top: -40px;
+    transition: opacity 0.5s;
+}
+.supermarket:hover .category {
+    opacity: 1;
+    z-index: 10;
+}
+.health .category {
+    margin-top: -100px;
+    transition: opacity 0.2s;
+}
+.health:hover  .category {
+    opacity:1;
+    z-index: 10;
+}
+.home .category {
+    margin-top: -90px;
+    transition: opacity 0.2s;
+}
+.home:hover  .category {
+    opacity:1;
+    z-index: 10;
+}
+.phones .category {
+    margin-top: -100px;
+    transition: opacity 0.2s;
+}
+.phones:hover  .category {
+    opacity:1;
+    z-index: 10;
+}
+.computing .category {
+    margin-top: -140px;
+    transition: opacity 0.2s;
+}
+.computing:hover  .category {
+    opacity:1;
+    z-index: 10;
+}
+.electronics .category {
+    margin-top: -170px;
+    transition: opacity 0.2s;
+}
+.electronics:hover  .category {
+    opacity:1;
+    z-index: 10;
+}
+.fashion .category {
+    margin-top: -200px;
+    transition: opacity 0.2s;
+}
+.fashion:hover  .category {
+    opacity:1;
+    z-index: 10;
+}
+.gaming .category {
+    margin-top: -130px;
+    transition: opacity 0.2s;
+}
+.gaming:hover  .category {
+    opacity:1;
+    z-index: 10;
+}
+.baby .category{
+    margin-top: -250px;
+    transition: opacity 0.2s;
+}
+.baby:hover  .category {
+    opacity:1;
+    z-index: 10;
+}
+.sporting .category {
+    margin-top: -265px;
+    transition: opacity 0.2s;
+}
+.sporting:hover  .category {
+    opacity:1;
+    z-index: 10;
+}
+.other:hover  .category {
+    opacity:1;
+    z-index: 10;
+}
+
+.sidebar .health p:hover{
+    cursor:pointer;
+    font-size: bold;
+}
+.category {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: 1;
+    background-color: white;
+    opacity: 0;
+    margin-left: 120px;
+    margin-top: -35px;
+    padding-left: 20px;
+    line-height: 8px;
+    pointer-events: none;
+}
+.sub-category {
+    width:180px;
+}
+.deco {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 0.5;
+}
+.image-slide {
+    flex:start;
+    margin-right: 0;
+    display: inline-block;
+    margin-left: 200px;
+    z-index: 0.5;
+}
+.under5k{
+    display: inline-block;
+    z-index: 0.5;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-left: 60px;
+    color: white;
+    background: orange;
+    padding:30px;
+    border-radius: 5px;
+}
+.products {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgb(114, 183, 206);
+    z-index: 5;
+    padding-left: 40px;
+}
+.product {
+    margin: 5px;
+
+}
+.product img{
+    width: 160px; 
+    height: 160px;
+    border-radius: 5px;
+    
+}
+.airpods .thumbnail img{
+    width: 150px;
+    height: 150px;
+}
+#price {
+    display: inline-block;
+}
+#op {
+    display: inline-block;
+}
+#cu {
+    display: inline-block;
+}
+#rp {
+    display: inline-block;
+}
+#hp {
+    display: inline-block;
+}
+button {
+    border: 0;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+}
+button:hover {
+    cursor: pointer;
+}

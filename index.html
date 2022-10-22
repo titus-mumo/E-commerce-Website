@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumia Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="alert">
+        <h1 class="alert">FREE DELIVERY IN 24H</h1>
+        </div>
+    </div>
+    <div class="call">
+        <p>Call or Whatsapp to order</p>
+        <p>0711011011</p>
+    </div>
+    <div class="sub-header">
+        <div class="name">
+            Jumia
+        </div>
+        <div class="search-bar">
+            <input class="input" placeholder="Search products, brands and categories" onkeyup="search_product()" type="text">
+            <button class="search">Search</button>
+        </div>
+        <div class="account">
+            <img src="images/icons/profile-home.png" alt="profile">
+            <div class="sub-account">
+                Account
+                    <select name="Account">
+                        <option value="none">SIGN IN</option>
+                        <option>My Account</option>
+                        <option>Saved Items</option>
+                    </select>
+            </div>
+        </div>
+        <div class="help">
+            <img src="images/icons/icons8-connectivity-and-help-50.png" alt="Help">
+            <div>
+                Help
+                <select>
+                    <option>HELP CENTER</option>
+                    <option>EASY RETURN</option>
+                    <option>SELL ON JUMIA</option>
+                </select>
+            </div>
+        </div>
+        <a href=".html/cart.html">
+            <div class="cart">
+                <img src="images/icons/icons8-shopping-cart-24.png" alt="shopping cart">
+                <p>Cart</p>
+            </div>
+        </a>
+    </div>
+    <div class="sidebar">
+        <div class="supermarket">
+            <div class='head'>SuperMarket</div>
+            <div class="category">
+                <div class="sub-category">
+                    <h5>FOOD CUPBOARD</h5>
+                    <p>Cooking Ingredients</p>
+                    <p>Snacks, Crisps, & Nuts</p>
+                    <p>Sugar & Floor</p>
+                    <p>Cereals</p>
+                    <p>Candy & Chocolate</p>
+                    <p>Margarine, Jams, Honey</p>
+                    <h5>BEER, WINE & SPIRITS</h5>
+                    <P>Beers</P>
+                </div>
+                <div class="sub-category">
+                    <h5>DRINKS</h5>
+                    <p>Carbonated Driinks</p>
+                    <P>Coffee, Tea & Cocoa</P>
+                    <p>Dairy</p>
+                    <p>Juice & Other Non Carbonated Drinks</p>
+                    <p>Syrups & Cordials</p>
+                    <p>Water</p>
+                    <h5>HOUSEHOLD SUPPLIES</h5>
+                    <P>Air Fresheners</P>
+                    <p>Bathroom Cleaners</p>
+                    <p>Bilbs & Batteries</p>
+                    <p>Floor Cleaners</p>
+                </div>
+            </div>
+        </div>
+        <div class="health">
+            <p>Health & Beauty</p>
+            <div class="category">
+                <div class="sub-category">
+                    <h5>HAIR CARE</h5>
+                    <p>Conditioner</p>
+                    <p>Extensions, Wigs, & Accessories</p>
+                    <p>Shampoo</p>
+                    <p>Styling Products</p>
+                    <h5>FRAGRANCES</h5>
+                    <p>Men's</p>
+                    <p>Women's</p>
+                    <h5>MEN'S GROOMING</h5>
+                    <p>Anti-Ageing</p>
+                    <p>Pre-Shave</p>
+                    <p>Sunblock</p>
+                </div>
+                <div class="sub-category">
+                    <h5>ORAL CARE</h5>
+                    <p>Children's Dental Care</p>
+                    <p>Dental Care Kits</p>
+                    <p>Mouthwash</p>
+                    <p>Teeth Whitening</p>
+                    <p>Tooth Brushes</p>
+                    <p>ToothPaste</p>
+                    <h5>HEALTH CARE</h5>
+                    <p>Diabetes Care</p>
+                    <p>Feminine Care</p>
+                    <p>First Aid</p>
+                    <p>Sleep & Snoring</p>
+                </div>
+                <div class="sub-category">
+                    <h5>PERSONAL CARE</h5>
+                    <p>Bath & Bathing Accesories</p>
+                    <p>Deodorants & Antiperspirants</p>
+                    <p>Lip Care</p>
+                    <p>Shave & Hair Removal</p>
+                    <p>Skin Care</p>
+                    <h5>MAKEUP</h5>
+                    <p>Eyes</p>
+                    <p>Face</p>
+                    <p>Lips</p>
+                </div>
+            </div>
+        </div>
+        <div class="home">
+            <p>Home & Office</p>
+            <div class="category">
+                <div class="sub-category">
+                    <h5>HOME & KITCHEN</h5>
+                    <p>Home Decor</p>
+                    <p>Bedding</p>
+                    <p>Wall Art</p>
+                    <p>Bath</p>
+                    <p>Storage & Organisation</p>
+                    <p>Ktchen & Dining</p>
+                    <p>Furniture</p>
+                    <h5>SMALL APPLIANCES</h5>
+                    <p>Blenders</p>
+                    <p>Kettles</p>
+                    <p>Toasters</p>
+                    <p>Ironing & Laundry</p>
+                    <p>Other Small Appliances</p>
+                </div>
+                <div class="sub-category">
+                    <h5>APPLIANCES</h5>
+                    <p>Refrigerators</p>
+                    <p>Freezers</p>
+                    <p>Water Dispensers and Containers</p>
+                    <p>Washers & Dryers</p>
+                    <h5>COOKING APPLIANCES</h5>
+                    <p>Cook Top</p>
+                    <p>Microwave Ovens</p>
+                    <p>Cooking Appliances Accessories</p>
+                    <p>Cookers</p>
+                    <h5>OFFICE PRODUCTS</h5>
+                    <p>Office & School Supplies</p>
+                </div>
+            </div>
+        </div>
+        <div class="phones">
+            <p>Phones & Tablets</p>
+            <div class="category">
+                <div class="sub-category">
+                    <h5>MOBILE PHONES</h5>
+                    <p>Smartphones</p>
+                    <p>Feature Phones</p>
+                    <h5>TABLETS</h5>
+                    <p>iPad Tablets</p>
+                    <p>Tablet Accessories</p>
+                    <p>Bags, Cases, Bags & Sleeves</p>     
+                </div>
+                <div class="sub-category"> 
+                    <h5>MOBILE PHONE ACCESSORIES</h5>
+                    <p>Portable power Banks</p>
+                    <p>Smart Watches</p>
+                    <p>Cases & Sleeves</p>
+                    <p>Screen Protectors</p>
+                    <p>Bluetooth Accesories</p>
+                    <p>Headsets</p>
+                    <p>Headphones</p>
+                    <p>Batteries & Battery Packs</p>
+                </div>
+            </div>
+        </div>
+        <div class="computing">
+            <p>Computing</p>
+            <div class="category">
+                <div class="sub-category">
+                    <h5>LAPTOPS</h5>
+                    <p>Macbooks</p>
+                    <p>Netbooks</p>
+                    <p>2 in 1 Laptops</p>
+                    <p>Ultrabooks</p>
+                    <h5>COMPUTERS</h5>
+                    <P>Laptop accesories</P>
+                    <p>Desktops</p>
+                    <p>Monitors</p>
+                    <p>Scanners</p>
+                    <p>Printers</p>
+                    <p>Keyboards, Mice, & Accessories</p>
+                    <p>Computer Cable Adapters</p>
+                    <p>Printer Ink & Toner</p>
+                    <p>Networking Products</p>
+                </div>
+                <div class="sub-category">
+                    <h5>DATA STORAGE</h5>
+                    <P>External Hard Drives</P>
+                    <p>Graphics Cards</p>
+                    <p>Fans & Cooling</p>
+                </div>
+            </div>
+        </div>
+        <div class="electronics">
+            <p>Electronics</p>
+            <div class="category">
+                <div class="sub-category">
+                    <h5>TELEVISION & VIDEO</h5>
+                    <P>Smart TVs</P>
+                    <p>LEDS & LCD TVs</p>
+                    <p>Data Projectors</p>
+                    <h5>HOME AUDIO</h5>
+                    <p>Portable Speakers</p>
+                    <p>Home Theatre Systems</p>
+                    <p>Bluetooth Speakers</p>
+                    <p>Sound Bars</p>
+                    <p>Compact Radios & Stereos</p>
+                </div>
+                <div class="sub-category">
+                    <h5>ACCESSORIES AND SUPPLIES</h5>
+                    <p>Audio & Video Accessories</p>
+                    <p>Batteries</p>
+                    <p>Batteries & Chargers</p>
+                    <p>Cables</p>
+                    <p>Camera & Photo Accessories</p>
+                    <p>Camera Accessories</p>
+                    <p>Home Audio Accessories</p>
+                    <p>Power Protection</p>
+                    <p>Television Accessories</p>
+                </div>
+            </div>
+        </div>
+        <div class="fashion">
+            <p>Fashion</p>
+            <div class="category">
+                <div class="sub-category">
+                    <h5>WOMEN'S FASHION</h5>
+                    <p>Dresses</p>
+                    <p>Suiting & Blazers</p>
+                    <p>Tops & Tees</p>
+                    <p>Coats, Jackets & Vests</p>
+                    <p>Jumpsuits & Rompers</p>
+                    <p>Skirts</p>
+                    <p>Lingerie Sleep & Lounge</p>
+                    <p>Jeans</p>
+                    <p>Shorts</p>
+                    <p>Jewelry</p>
+                    <p>Fashion Sneekers</p>
+                    <p>Sandals</p>
+                </div>
+                <div class="sub-category">
+                    <h5>MEN'S FASHION</h5>
+                    <p>Shirts</p>
+                    <p>T-Shirts & Tanks</p>
+                    <p>Fashion Sneakers</p>
+                    <p>Loafers & Slip-Ons</p>
+                    <p>Belts</p>
+                    <p>Sungalsses & Eyewear Accessories</p>
+                    <h5>BABYS</h5>
+                    <p>Baby Boys</p>
+                    <p>Baby Girls</p>
+                    <h5>KID'S FASHION</h5>
+                    <p>Boys</p>
+                    <p>Girls</p>
+                </div>
+            </div>
+        </div>
+        <div class="gaming">
+            <p>Gaming</p>
+            <div class="category">
+                <div class="sub-category">
+                    <h5>PLAYSTATION</h5>
+                    <p>PlayStation 3</p>
+                    <p>PlayStation 4</p>
+                    <p>PlayStation Vita</p>
+                    <h5>DIGITAL GAMES</h5>
+                    <p>Nintendo Switch</p>
+                    <p>Xbox 360</p>
+                </div>
+                <div class="sub-category">
+                    <h5>NINTENDO</h5>
+                    <P>Nintendo 3DS</P>
+                    <p>Nintendo DS</p>
+                    <p>Wii</p>
+                    <h5>PC GAMING</h5>
+                    <p>Games</p>
+                    <h5>SONY PSP</h5>
+                </div>
+            </div>
+        </div>
+        <div class="baby">
+            <p>Baby Products</p>
+            <div class="category">
+                <div class="sub-category">
+                    <h5>DIAPER BAG</h5>
+                    <p>Disposable Diapers</p>
+                    <p>Portable Changing Pads</p>
+                    <p>Cloth Diapers</p>
+                    <p>Changing Tables</p>
+                    <p>Wipes & Holders</p>
+                    <h5>GEAR</h5>
+                    <p>Walkers</p>
+                    <p>Backpacks & Carriers</p>
+                    <p>Swings, Jumpers & Bouncers</p>
+                    <h5>BATHING AND SKIN CARE</h5>
+                    <p>Soaps & Cleaners</p>
+                    <p>Grooming & Health Kits</p>
+                    <p>Bathing Tubs & Seats</p>
+                    <p>Washcloth & Towels</p>
+                    <p>Bathroom Safety</p>
+                    <p>Skin Care</p>
+                </div>
+                <div class="sub-category">
+                    <h5>BABY & TODDLER TOYS</h5>
+                    <p>Toy Gift Sets</p>
+                    <p>Music & Sounds</p>
+                    <p>Bath Toys</p>
+                    <h5>FEEDING</h5>
+                    <p>Bibs & Burp Cloths</p>
+                    <p>Bottle-Feeding</p>
+                    <p>Breastfeeding</p>
+                    <p>Highchairs & Booster Seats</p>
+                    <p>Pacifiers & Accessories</p>
+                    <p>Solid Feeding</p>
+                    <h5>POTTY TRAINING</h5>
+                    <p>Potties & Seats</p>
+                    <p>Seat Covers</p>
+                    <p>Step Stools</p>
+                    <p>Training Pants</p>
+                    <h5>HEALTH & BABY CARE</h5>
+                    <p>Nail Care</p>
+                    <p>Teether & Teething Relief</p>
+                    <p>Thermometers</p>
+                </div>
+            </div>
+        </div>
+        <div class="sporting">
+            <p>Sporting Goods</p>
+            <div class="category">
+                <div class="sub-category">
+                    <h5>SPORTS & FITNESS</h5>
+                    <p>Exercise & Fitness</p>
+                    <p>Accessories</p>
+                    <p>Sport Clothing</p>
+                    <p>Team Sports</p>
+                    <h5>SPORTS NUTRITION</h5>
+                    <p>Carb Management Suppliments</p>
+                    <p>Endurance & Energy</p>
+                    <p>Fat Burners & Thermogenics</p>
+                    <p>Post-Workout & Recovery</p>
+                    <p>Pre-Workout</p>
+                </div>
+                <div class="sub-category">
+                    <h5>OUTDOORS RECREATION</h5>
+                    <p>Camping & Hiking</p>
+                    <p>Skates & Skateboards</p>
+                    <p>Cycling</p>
+                    <p>Accesories</p>
+                </div>
+            </div>
+        </div>
+        <div class="others">
+            <p>Other Categories</p>
+        </div>
+    </div>
+    <div class="deco">
+        <div class="image-slide">
+            <img src="images/product_desc/KE_CLS_Phones_1022_S.jpg" alt="image slide">
+
+        </div>
+        <div class="under5k">
+            Under<br>
+            5K Shop
+        </div>
+    </div>
+    <div class="products">
+        <div class="product">
+            <div>
+                <img src="images/product_desc/lenovo laptop.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div class="price">
+                    <p><div class="name-class">Lenovo Think-Pad laptop</div><br>
+                    <div id="op"><del>Kshs.40,000</del></div><div id="cu">Kshs.</div><div id="rp">35</div>,<div id="hp">050</div></p>
+                </div>
+                <button onclick="func()">BUY</button>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/air pods.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div class="price">
+                    <p><div class="name-class">Air Pods</div><br>
+                    <del>Kshs.1,500</del>Kshs.1, 200</p>
+                </div>
+                <a href="airpods.html">
+                    <button> BUY </button>
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/wallclock.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div action="price">
+                    <p><div class="name-class">Wall Clock</div><br>
+                        <del>Kshs.12,000</del>Kshs.9,050</p>
+                </div>
+                <a href="airpods.html">
+                    <button> BUY </button>
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/tv.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div class="price">
+                    <p><div class="name-class">Curved Television</div><br>
+                    <del>Kshs.120,000</del>Kshs.90,450</p>
+                </div>
+                <a href="airpods.html">
+                    <button> BUY </button>
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/ps5_game1.jpg" alt="Product View">
+            </div>
+            <div>
+                <div>
+                    <p><div class="name-class">PS5 Gaming Console</div><br>
+                    <del>Kshs.90,000</del>Kshs.78,000</p>
+                </div>
+                <a href="airpods.html">
+                    <button> BUY </button>
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/Mouse.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div class="price">
+                        <p><div class="name-class">Wireless Mouse</div><br>
+                    <del>Kshs.1,200</del>Kshs.1,100</p>
+                </div>
+                <a href="airpods.html">
+                    <button> BUY </button>
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/Xbox-360game4.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div class="price">
+                    <p><div class="name-class">XBOX Gaming Console</div><br>
+                    <del>Kshs.80,000</del>Kshs.78,000</p>
+                </div>
+                <a href="airpods.html">
+                    <button> BUY </button>
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/selfie suit.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div class="price">
+                    <p><div class="name-class">Self-Suit Selfie</div><br>
+                    <del>Kshs.15,000</del>Kshs.12,000</p>
+                </div>
+                <a href="airpods.html">
+                    <button> BUY </button>
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/jamesons irish.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div class="price">
+                    <p><div class="name-class">Jamesons Irish</div><br>
+                    <del>Kshs.5,000</del>Kshs.4,500</p>
+                </div>
+                <a href="airpods.html">
+                    <button> BUY </button>
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/rexona Rollon.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div class="price">
+                    <p><div class="name-class">Rexona Rollon</div><br>
+                    <div id="op"><del>Kshs.1,500</del></div><div id="cu">Kshs.</div><div id="rp">1</div>,<div id="hp">200</div></p>
+                </div>
+                <button onclick="func()">BUY</button>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/sport shoe.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div class="price">
+                    <p><div class="name-class">Sport Shoe</div><br>
+                    <del>Kshs.1,500</del>Kshs.1,200</p>
+                </div>
+                <a href="airpods.html">
+                    <button> BUY </button>
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/beefeater london pink.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div class="price">
+                    <p><div class="name-class">Beefeater London Pink</div><br>
+                    <del>Kshs.5,000</del>Kshs.3,000</p>
+                </div>
+                <a href="airpods.html">
+                    <button> BUY </button>
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/Fuji_Dash_Fitness_1X._SY304_CB639748186_.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div class="price">
+                    <p><div class="name-class">Fuji Dash Fitness</div><br>
+                    <del>Kshs.35,000</del>Kshs.32,000</p>
+                </div>
+                <a href="airpods.html">
+                    <button> BUY </button>
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/malibu.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div class="price">
+                    <p><div class="name-class">Malibu</div><br>
+                    <del>Kshs.5,000</del>Kshs.4,200</p>
+                </div>
+                <a href="airpods.html">
+                    <button> BUY </button>
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/dress_1.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div class="price">
+                    <p><div class="name-class">Fitting Dress</div><br>
+                    <del>Kshs.3,000</del>Kshs.2,800</p>
+                </div>
+                <a href="airpods.html">
+                    <button> BUY </button>
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/jacobs creek.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div class="price">
+                    <p><div class="name-class">Jacobs Creek</div><br>
+                    <del>Kshs.8,000</del>Kshs.7,800</p>
+                </div>
+                <a href="airpods.html">
+                    <button> BUY </button>
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/kabras Sugar.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div class="price">
+                    <p><div class="name-class">Kabras Sugar</div><br>
+                    <del>Kshs.300</del>Kshs.280</p>
+                </div>
+                <a href="airpods.html">
+                    <button> BUY </button>
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/beefeater.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div class="price">
+                    <p><div class="name-class">Beefeater</div><br>
+                    <del>Kshs.5,000</del>Kshs.4,800</p>
+                </div>
+                <a href="airpods.html">
+                    <button> BUY </button>
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/ps3game3.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div class="price">
+                    <p><div class="name-class">PS3 Gaming Console</div><br>
+                    <del>Kshs.35,000</del>Kshs.32,000</p>
+                </div>
+                <a href="airpods.html">
+                    <button> BUY </button>
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/dress_2.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div class="price">
+                    <p><div class="name-class">Nature Walk Dress</div><br>
+                    <del>Kshs.5,000</del>Kshs.3,500</p>
+                </div>
+                <a href="airpods.html">
+                    <button> BUY </button>
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/dress_3.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div class="price">
+                    <p><div class="name-class">Event Dress</div><br>
+                    <del>Kshs.5,000</del>Kshs.4,800</p>
+                </div>
+                <a href="airpods.html">
+                    <button> BUY </button>
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/PS4game2.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div class="price">
+                    <p><div class="name-class">PS4 Gaming Console</div><br>
+                    <del>Kshs.70,000</del>Kshs.68,000</p>
+                </div>
+                <a href="airpods.html">
+                    <button> BUY </button>
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/dress_4.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div class="price">
+                    <p><div class="name-class">Date Dress</div><br>
+                    <del>Kshs.5,000</del>Kshs.4,700</p>
+                </div>
+                <a href="airpods.html">
+                    <button> BUY </button>
+                </a>
+            </div>
+        </div>
+        <div class="product">
+            <div>
+                <img src="images/product_desc/IMG_20211213_174333.jpg" alt="Product View">
+            </div>
+            <div class="flex">
+                <div class="price">
+                    <p><div class="name-class">Home Work Station</div><br>
+                    <del>Kshs.225,000</del>Kshs.180,700</p>
+                </div>
+                <a href="airpods.html">
+                    <button> BUY </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
